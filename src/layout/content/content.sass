@@ -1,0 +1,25 @@
+.content
+  flex-grow: 1
+  flex-shrink: 0
+  flex-basis: auto
+
+.container
+  max-width: 1195px
+  padding: 0 15px
+  margin: 0 auto
+
+  +max-w($laptop_sm)
+    max-width: 950px
+
+.swiper-pagination-bullet
+  width: 8px
+  height: 8px
+  background-color: #9b9b9b
+
+  &-active
+    width: 12px
+    height: 12px
+    background: #f25822
+
+a 
+  text-decoration: none

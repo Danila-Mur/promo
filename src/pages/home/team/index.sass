@@ -1,0 +1,97 @@
+.team
+  padding-top: 86px
+  padding-bottom: 100px
+
+.team__title
+  display: block
+  margin-bottom: 15px
+  font-size: 45px
+  font-weight: 600
+  line-height: 1.5
+  text-align: center
+
+  +max-w($tablet)
+    font-size: 40px
+    line-height: 1.2
+
+.team__text
+  display: block
+  max-width: 461px
+  margin: 0 auto 52px
+  color: #666666
+  font-size: 16px
+  line-height: 1.5
+  text-align: center
+
+.team__card
+  padding: 50px 70px
+  border: 1px solid #eeeeee
+  text-align: center
+
+  &:hover
+    box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.1)
+
+.team__card-name
+  display: block
+  margin-top: 9px
+  font-size: 19px
+  font-weight: 600
+  line-height: 1.5
+
+.team__card-specialty
+  display: block
+  margin-bottom: 22px
+  color: #888888
+  font-size: 13px
+  font-weight: 500
+  line-height: 1.5
+
+.team__card-list
+  display: flex
+  align-items: center
+  justify-content: center
+
+.team__card-item + .team__card-item
+  margin-left: 11px
+
+.team__card-link
+  text-decoration: none
+
+.team__card-item
+  padding: 5px
+
+
+  &:hover
+    border-radius: 100px
+    background-color: #f25822
+
+    .team__card-img::before
+      color: #fff
+
+.team__card-img
+
+  &::before
+    font-family: 'FontAwesome'
+    color: #aaaaaa
+
+  &--facebook
+    &::before
+      content: "\e901"
+
+  &--twitter
+    &::before
+      content: "\e902"
+
+  &--linkedin
+    &::before
+      content: "\e900"
+
+  &--google
+    &::before
+      content: "\e904"
+
+.team__cards.swiper-container
+  min-height: 400px
+
+.team__cards .swiper-pagination
+  bottom: 0 !important

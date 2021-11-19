@@ -1,0 +1,75 @@
+.intro
+  position: relative
+  padding-top: 122px
+  padding-bottom: 103px
+
+  +max-w($tablet)
+    padding-top: 50px
+    padding-bottom: 50px
+
+.intro__content
+  max-width: 543px
+
+  +max-w($tablet)
+    max-width: 450px
+
+  +max-w($mobile)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    text-align: center
+
+.intro__content-title
+  margin-bottom: 22px
+  font-size: 60px
+  font-weight: 600
+  line-height: 1.2
+
+  +max-w($tablet)
+    font-size: 50px
+
+  +max-w($mobile)
+    font-size: 40px
+
+  +max-w(360)
+    font-size: 30px
+
+.intro__content-subtitle
+  display: block
+  margin-bottom: 41px
+  color: #888888
+  font-size: 20px
+  font-weight: 500
+  line-height: 1.15
+
+  +max-w(360)
+    font-size: 17px
+
+.intro__content-button
+  display: block
+  padding: 15px 35px
+  border: none
+  border-radius: 50px
+  color: #ffffff
+  background-color: #f25822
+  box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2)
+  font-size: 15px
+  font-weight: 700
+  line-height: 1.2
+  cursor: pointer
+
+.intro__img
+  position: absolute
+  top: 20px
+  right: 108px
+  z-index: -1
+
+  +max-w($laptop_md)
+    width: auto
+    height: 100%
+    opacity: .5
+
+  +max-w($mobile_md)
+    display: none

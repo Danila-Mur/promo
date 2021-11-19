@@ -1,0 +1,145 @@
+.header
+  padding-top: 38px
+  padding-bottom: 20px
+
+  +max-w($tablet)
+    padding-top: 25px
+
+.header__inner
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__logo
+  flex-grow: 1
+
+  +max-w($mobile)
+    // flex-grow: 0
+
+.nav
+
+  +max-w($mobile)
+    position: absolute
+    top: 20px
+    left: 50%
+    display: none
+    transform: translateX(-50%)
+
+  +max-w(450px)
+    top: 40px
+
+.nav__list 
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-right: 34px
+
+  +max-w($tablet)
+    margin-right: 25px
+
+  +max-w($mobile)
+    flex-direction: column
+    align-items: center
+    margin-right: 0
+
+.nav__item
+  list-style-type: none
+
+.nav__item + .nav__item
+  margin-left: 35px
+
+  +max-w($tablet)
+    margin-left: 15px
+
+  +max-w($mobile)
+    margin-top: 10px
+    margin-left: 0
+
+.nav__link
+  padding-bottom: 2px
+  color: #000000
+  font-size: 14px
+  font-weight: 500
+  line-height: 1.2
+  text-decoration: none
+  
+  &--active
+    color: #f25822
+
+  &:hover
+    text-decoration: underline
+
+  +max-w($mobile)
+    font-size: 20px
+    line-height: 1.5
+
+.header__button
+  padding: 12px 27px
+  border: none
+  border-radius: 30px
+  color: #ffffff
+  background-color: #f25822
+  font-size: 12px
+  font-weight: 600
+  line-height: 1.2
+  cursor: pointer
+
+  +max-w(380)
+    padding: 12px 13px
+
+.header__burger
+  display: none
+  
+  +max-w($mobile)
+    position: relative
+    display: block    
+    width: 40px
+    height: 40px
+    margin-right: 20px
+    cursor: pointer
+
+.header__burger-item
+  position: absolute
+  top: 13px
+  right: 0
+  width: 24px
+  height: 2px
+  background-color: #000000
+  transition: transform .3s, top .3s, right .3s 
+
+  &::before, &::after 
+    content: ""
+    position: absolute
+    right: 0
+    display: block
+    height: 2px
+    background-color: #000000
+
+  &::before
+    top: 12px
+    width: 12px
+
+  &::after
+    top: 6px
+    width: 18px
+    transition: transform .3s, top .3s, right .3s, width .3s 
+
+  &--open
+    top: 20px
+    right: -1px
+    width: 24px
+    height: 2px
+    background-color: #000000
+    transform: rotate(45deg)
+
+    &::after
+      top: 0px
+      right: 0
+      width: 24px
+      height: 2px
+      background-color: #000000
+      transform: rotate(-90deg)
+
+    &::before
+      display: none

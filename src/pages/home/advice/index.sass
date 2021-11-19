@@ -1,0 +1,44 @@
+.advice
+  padding: 100px 0
+
+  +max-w($tablet)
+    padding-bottom: 50px
+
+
+.advice__cards
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(386px, 1fr))
+
+  +max-w($laptop_sm)
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+
+.advice__card
+  display: flex
+  flex-direction: column
+  padding: 40px 49px 25px 29px
+
+  +max-w($laptop_sm)
+    align-items: center
+    justify-content: center
+    text-align: center
+
+  &:hover
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06)
+
+.advice__card-img
+  max-width: 70px
+
+.advice__card-title
+  display: block
+  margin-top: 24px
+  margin-bottom: 23px
+  font-size: 24px
+  font-weight: 600
+  line-height: 1.15
+
+.advice__card-text
+  max-width: 275px
+  font-size: 15px
+  line-height: 1.5
+  color: #666666
+  

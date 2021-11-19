@@ -1,0 +1,98 @@
+.plans
+  padding-top: 87px
+  padding-bottom: 100px
+  background-color: #fafafa
+
+.plans__content
+  text-align: center
+
+.plans__title
+  display: block
+  margin-bottom: 8px
+  font-size: 45px
+  font-weight: 600
+  line-height: 1.5
+
+  +max-w($tablet)
+    font-size: 40px
+    line-height: 1.2
+
+.plans__subtitle
+  display: block
+  margin-bottom: 56px
+  font-size: 16px;
+  line-height: 1.5
+  color: #666666
+
+.plans__card
+  display: flex
+  flex-direction: column
+  justify-content: start
+  padding: 63px 79px 70px
+  background-color: #fff
+  border: 5px solid transparent;
+  
+  &:hover
+    cursor: pointer
+    border-image: linear-gradient(to left top,rgba(242, 88, 34, 0.25) 10%,  transparent 30%, transparent 70%, rgba(242, 88, 34, 0.25) 90%);
+    border-image-slice: 1;
+
+  +max-w(400)
+    padding: 27px 29px 30px
+
+.plans__card-name
+  display: block
+  min-height: 72px
+  margin-bottom: 2px
+  font-size: 24px
+  font-weight: 500
+  line-height: 1.5
+
+  &--top
+    color: #F25822
+
+.plans__card-price
+  position: relative
+  font-size: 37px
+  font-weight: 600
+  line-height: 1.5
+
+  +max-w(380)
+    font-size: 28px
+
+.plans__card-list
+  min-height: 160px
+
+.plans__card-item
+  color: #666666
+  font-size: 16px
+  font-weight: 500
+  line-height: 2.5
+
+.plans__card-button
+  margin-top: 27px
+  padding: 9px 64px
+  border: none
+  border-radius: 50px
+  color: #f3602d
+  background-color: rgba(242, 88, 34, 0.25)
+  font-size: 13px
+  font-weight: 600
+  line-height: 2.5
+  cursor: pointer
+
+  &:hover
+    color: #fff
+    background-color: #f25822
+
+  +max-w($mobile)
+    padding: 9px 12px
+
+.plans__cards.swiper-container
+  min-height: 590px
+
+  +max-w(380)
+    min-height: 465px
+
+.plans__cards .swiper-pagination
+  bottom: 0 !important
