@@ -1,5 +1,8 @@
 # FRONTEND BOILERPLATE
 
+## Link
+https://danila-mur.github.io/promo/
+
 ## Install
 ```sh
 $ git clone 
